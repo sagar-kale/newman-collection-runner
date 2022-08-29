@@ -1,0 +1,24 @@
+{
+    "name": "collection-runner",
+    "version": "1.0",
+    "description": "This is postman test automation tool written in node js using newman library of postman",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js env=local runAsSingle=true",
+        "dev": "nodemon index.js"
+    },
+    "author": {
+        "name": "Sagar Kale",
+        "email": "sagark.kale@hotmail.com",
+        "url": "https://github.com/sagar-kale"
+    },
+    "private": "true",
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "express": "^4.18.1",
+        "handlebars": "^4.7.7",
+        "newman": "^5.3.2",
+        "newman-reporter-htmlextra": "^1.22.10"
+    }
+}

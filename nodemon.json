@@ -1,0 +1,6 @@
+{
+    "ignore": [
+        "resources/*",
+        "README"
+    ]
+}
