@@ -1,0 +1,12 @@
+{
+  "collections": [
+    {
+      "name": "test-collection.postman_collection.json",
+      "progress": "completed",
+      "completionDate": "2022-08-25T08:52:47.470Z",
+      "environments": [
+        "local"
+      ]
+    }
+  ]
+}
