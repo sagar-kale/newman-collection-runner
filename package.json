@@ -1,6 +1,6 @@
 {
     "name": "collection-runner",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "This is postman test automation tool written in node js using newman library of postman",
     "main": "index.js",
     "scripts": {

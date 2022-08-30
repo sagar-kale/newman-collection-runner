@@ -151,9 +151,15 @@ const runNewman = async (fileName, collectionFile, dataFile, env) => {
                 results.push(args);
             })
             .on('done', function (err, summary) {
-                console.log('Adding completed file to completed collection.');
-                addToCompletedCollection(fileName, env);
-                console.log("Results::::", results);
+                if (err || summary.error) {
+                    console.error('collection run encountered an error.',err,summary.error);
+                }
+                else {
+                    console.log('collection run completed.');
+                    console.log('Adding completed file to completed collection.');
+                    addToCompletedCollection(fileName, env);
+                    console.log("Results::::", results);
+                }
             });
     } catch (e) {
         console.error('Error while running collection', e);
